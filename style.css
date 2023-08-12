@@ -15,15 +15,18 @@ header h6 {
 
 main {
     font-family:sans-serif;
+    text-align: left;
 }
 
 main h2 {
     font-weight:150;
+    text-align: center;
 }
 
 h6 {
     font-size:12px;
     font-weight:lighter;
+    text-align:center;
 }
 
 .square {
@@ -32,5 +35,17 @@ h6 {
         flex-direction:row;
         flex-wrap: wrap;
     }
+}
+.boxed {
+    border:5px solid darkslategray;
+    width:450px;
+    margin:20px;
+    padding:40px
+    
+}
+
+.card{
+    position:relative;
+    margin 30px;
 }
 
