@@ -1,5 +1,12 @@
-* {
-    background-color: pink;
+.grid {
+    display:inline-grid;
+    width:100%;
+    grid-template-columns:
+ repeat(12 1fr) ;
+}
+
+.container {
+    display: inline-grid;
 }
 
 header h1 {
@@ -21,6 +28,9 @@ main {
 main h2 {
     font-weight:150;
     text-align: center;
+    position: relative;
+    margin-top: -70px;
+    border: 3px solid #008080;
 }
 
 h6 {
@@ -29,23 +39,52 @@ h6 {
     text-align:center;
 }
 
-.square {
-    {
-        display: flex;
-        flex-direction:row;
-        flex-wrap: wrap;
-    }
-}
+
 .boxed {
-    border:5px solid darkslategray;
+    border:5px dotted darkslategray;
     width:450px;
-    margin:20px;
-    padding:40px
+    margin:40px;
+    padding:5%;
+    height:350px;
     
 }
 
-.card{
-    position:relative;
-    margin 30px;
+.container {
+    display:grid;
+    grid-template-rows:
 }
 
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+.linear-gradient-background {
+    background-image:linear-gradient (
+        rgba(232. 102. 236. 0.3) 0%
+        rgba(232. 102. 236. 0.6) 100%
+    );
+}
+
+.code-card.card-header {
+    border-radius:8px;
+    transition:all 0.5 ease-in-out;
+}
+
+.code-card:hover,
+.code-card:hover.hard-header {
+    box-shadow: inset 8px 0px 8px
+    rgba(232. 102. 236. 1).0 0 15px
+    rgba(232.102.236.1);
+}
+
+.card-header {
+    position: relative;
+    margin-top: -20px;
+}
